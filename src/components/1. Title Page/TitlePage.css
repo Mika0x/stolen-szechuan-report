@@ -1,0 +1,42 @@
+.title-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  min-height: 70vh; /* Adjust as needed to fill the content area */
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Match the content area background */
+}
+
+
+.logo-image {
+  max-width: 75%; /* Current setting */
+  height: auto;
+}
+
+.main-title {
+  font-size: 2.2em; /* Adjust as needed */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 1.8em; /* Adjust as needed */
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.date {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px; /* More space before copyright */
+}

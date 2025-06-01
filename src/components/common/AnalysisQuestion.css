@@ -1,0 +1,62 @@
+.analysis-question-container {
+  background-color: #f9f9f9; /* Light background for each question block */
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 25px; /* Space between question blocks */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.analysis-question-container h4 { /* Styling for the question itself */
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.detail-block {
+  margin-bottom: 12px;
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #555;
+  display: block; /* Makes the label take its own line */
+  margin-bottom: 5px;
+}
+
+.detail-content {
+  padding-left: 10px; /* Indent content slightly under the label */
+  line-height: 1.6;
+  color: #444;
+}
+
+.detail-content.finding-content {
+  /* Specific styles for finding, if needed */
+  font-style: italic; /* Example: make finding italic */
+}
+
+.detail-content.methodology-content {
+  /* Specific styles for methodology, if needed */
+}
+
+.detail-content.evidence-content img {
+  max-width: 100%; /* Ensure images in evidence are responsive */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.detail-content.evidence-content .code-block { /* If you want to display code as evidence */
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto; /* For horizontal scrolling if code is wide */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap; /* To respect newlines and spaces */
+}
