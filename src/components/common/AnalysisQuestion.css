@@ -1,13 +1,13 @@
 .analysis-question-container {
-  background-color: #f9f9f9; /* Light background for each question block */
+  background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   padding: 15px;
-  margin-bottom: 25px; /* Space between question blocks */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.analysis-question-container h4 { /* Styling for the question itself */
+.analysis-question-container h4 {
   font-size: 1.3em;
   color: #333;
   margin-top: 0;
@@ -17,46 +17,133 @@
 }
 
 .detail-block {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .detail-label {
   font-weight: bold;
   color: #555;
-  display: block; /* Makes the label take its own line */
+  display: block;
   margin-bottom: 5px;
 }
 
 .detail-content {
-  padding-left: 10px; /* Indent content slightly under the label */
+  padding-left: 10px;
   line-height: 1.6;
   color: #444;
 }
 
-.detail-content.finding-content {
-  /* Specific styles for finding, if needed */
-  font-style: italic; /* Example: make finding italic */
+.detail-content.answer-content {
+  background-color: #e8f5e9;
+  padding: 8px;
+  border-left: 4px solid #43a047;
+  border-radius: 4px;
+}
+
+.answer-content a.evidence-link:link, 
+.answer-content a.evidence-link:visited {
+  color: #018749; /* Purple */
+  text-decoration: underline; /* Ensure it looks like a link */
+}
+.answer-content a.evidence-link:hover {
+  color: #17B169; /* Darker purple on hover */
+}
+
+/* Fallback if .evidence-link class is not used, but less specific */
+.answer-content a:link, 
+.answer-content a:visited {
+  color: #018749; /* Purple */
+  text-decoration: underline;
+}
+.answer-content a:hover {
+  color: #1DB954; /* Darker purple on hover */
 }
 
 .detail-content.methodology-content {
-  /* Specific styles for methodology, if needed */
+  background-color: #e1f5fe;
+  padding: 8px;
+  border-left: 4px solid #039be5;
+  border-radius: 4px;
+}
+
+.methodology-content a.evidence-link:link, 
+.methodology-content a.evidence-link:visited {
+  color: #003c66; /* Blue */
+  text-decoration: underline;
+}
+.methodology-content a.evidence-link:hover {
+  color: #1E90FF; 
+}
+
+/* Fallback */
+.methodology-content a:link, 
+.methodology-content a:visited {
+  color: #003c66; /* Blue */
+  text-decoration: underline;
+}
+.methodology-content a:hover {
+  color: #1E90FF; /* Darker blue on hover */
+}
+
+
+.detail-content.tools-content ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.detail-content.tools-content li {
+  list-style-type: disc;
+  margin-bottom: 4px;
+}
+
+.detail-content.evidence-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 10px;
 }
 
 .detail-content.evidence-content img {
-  max-width: 100%; /* Ensure images in evidence are responsive */
-  height: auto;
-  border: 1px solid #ddd;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  margin-top: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
 }
 
-.detail-content.evidence-content .code-block { /* If you want to display code as evidence */
-  background-color: #2d2d2d;
-  color: #f8f8f2;
-  padding: 10px;
+.detail-content.interpretation-content {
+  background-color: #fff8e1;
+  padding: 8px;
+  border-left: 4px solid #fbc02d;
   border-radius: 4px;
-  overflow-x: auto; /* For horizontal scrolling if code is wide */
-  font-family: 'Courier New', Courier, monospace;
+}
+
+.interpretation-content a.evidence-link:link, 
+.interpretation-content a.evidence-link:visited {
+  color: #a07400; /* Darker Yellow/Gold - #FEBE10 can be hard to read */
+  text-decoration: underline;
+}
+.interpretation-content a.evidence-link:hover {
+  color: #c79100; /* Even darker on hover */
+}
+
+/* Fallback */
+.interpretation-content a:link, 
+.interpretation-content a:visited {
+  color: #c79100; /* Darker Yellow/Gold */
+  text-decoration: underline;
+}
+.interpretation-content a:hover {
+  color: #FFC72C; /* Even darker on hover */
+}
+
+
+
+.evidence-label {
+  font-weight: bold;
+  font-style: italic;
   font-size: 0.9em;
-  white-space: pre-wrap; /* To respect newlines and spaces */
+  color: #333;
+  margin-bottom: 6px;
 }

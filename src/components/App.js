@@ -4,7 +4,8 @@ import ExecutiveSummary from './2. Executive Summary/ExecutiveSummary';
 import TitlePage from './1. Title Page/TitlePage';
 import ServerAnalysis from './3. Server Analysis/ServerAnalysis';
 import DesktopAnalysis from './4. Desktop Analysis/DesktopAnalysis';
-// import Conclusion from './Conclusion';
+import Conclusion from './5. Conclusion/Conclusion';
+import References from './6. References/References';
 
 function App() {
   const [activeSection, setActiveSection] = useState('Title Page');
@@ -15,6 +16,7 @@ function App() {
     'Server Analysis',
     'Desktop Analysis',
     'Conclusion',
+    'References'
   ];
 
   const renderSection = () => {
@@ -27,8 +29,10 @@ function App() {
          return <ServerAnalysis />;
       case 'Desktop Analysis':
          return <DesktopAnalysis />;
-      // case 'Conclusion':
-      //   return <Conclusion />;
+      case 'Conclusion':
+         return <Conclusion />;
+      case 'References':
+        return <References />
       default:
         return <div className="content-placeholder">Select a section to view its content.</div>;
     }

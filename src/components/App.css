@@ -23,45 +23,55 @@
   color: #b0b0b0;
 }
 
+/* src/App.css */
+
 .navbar {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers the group of buttons */
+  flex-wrap: wrap; /* This is key: Allows buttons to wrap to the next line */
   background-color: #333;
-  padding: 10px 0;
-  border-bottom: 3px solid #555; /* A more subtle accent */
+  padding: 8px 5px; /* Vertical padding, minimal horizontal for edges */
+  border-bottom: 3px solid #555; /* Or your preferred accent color */
 }
 
 .nav-button {
   background-color: #555;
   color: white;
   border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
+  padding: 10px 15px;   /* Padding inside each button */
+  margin: 5px;          /* Margin around each button for spacing, especially when wrapped */
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.1em;       /* Base font size for nav buttons */
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  text-align: center;     /* Ensure text within button is centered */
+  flex-grow: 0;         /* Don't allow buttons to grow to fill extra space in a line */
+  flex-shrink: 0;       /* Don't allow buttons to shrink if space is tight before wrapping */
+  /* white-space: nowrap; /* Consider if button text should ever break mid-word, usually not for nav.
+                             If button text is very long without spaces, you might need to adjust. */
+}
+
+.nav-button.active {
+  background-color: #4477AA; /* Your professional active color */
+  color: #fff;
+  font-weight: bold;
 }
 
 .nav-button:hover {
   background-color: #777;
 }
 
-.nav-button.active {
-  background-color: #4477AA; /* A more professional blue-grey */
-  color: #fff;
-  font-weight: bold;
-}
-
 .content-area {
   flex-grow: 1;
-  padding: 20px;
+  width: 100%; /* Make it take full available width */
+  max-width: 900px; /* Max width for better readability on larger screens */
+  margin: 20px auto; /* Centers content area when max-width is reached */
+  padding: 20px; /* Padding on all sides */
   background-color: #ffffff;
-  width: 900px; /* This is the main width constraint for all sections */
-  margin: 20px auto; /* Centers the content area */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: left;
+  box-sizing: border-box; /* IMPORTANT: padding and border will be included in the width/height */
 }
 
 .content-placeholder {
@@ -78,4 +88,60 @@
   font-size: 1em;
   font-weight: bold;
   margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.section-content h3 {
+  color: #333;
+  border-bottom: 3px solid #4477AA;
+  padding-bottom: 10px;
+  margin-top: 0; 
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-content h4 {
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.section-content {
+  padding: 15px;
+  font-size: 1.1rem;     /* ~17-18px */
+  line-height: 1.6;
+}
+
+.conclusion a {
+  color: #003c66; 
+  text-decoration: none;
+}
+
+.executive a, .references a {
+  color: #003c66; 
+  text-decoration: underline;
+}
+
+.executive a:hover, .conclusion a:hover, .references a:hover {
+  color: #1E90FF;
+}
+
+.references ul {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.references li {
+    margin-bottom: 2rem;
+}
+
+.references a {
+    display: block;
+    text-decoration: none;
+    margin-top: 0.2rem;
+    word-break: break-word;
 }
