@@ -41,8 +41,8 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>The Case of the Stolen Szechuan Sauce 🌶️</h1>
-        <h2>Digital Forensics Report</h2>
+        <h1>The Stolen Szechuan Sauce Recipe</h1>
+        <h2>Digital Forensics Report 🔎</h2>
       </header>
       <nav className="navbar">
         {sections.map((section) => (
