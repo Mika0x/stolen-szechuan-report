@@ -10,6 +10,7 @@ function TitlePage() {
 
         <h1 className="main-title">Digital Forensics Investigation Report</h1>
         <h2 className="sub-title">The Stolen Szechuan Sauce</h2>
+        <p className="examiner">Mika Gellizeau</p>
         <p className="date">2025-06-02</p>
       </div>
     </div>

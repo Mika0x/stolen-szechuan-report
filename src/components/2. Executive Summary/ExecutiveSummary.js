@@ -3,9 +3,8 @@ function ExecutiveSummary() {
   return (
     <div className="executive section-content">
       <h3>↠ Executive Summary ↞</h3>
-      <p></p>
       <p>
-        This report summarizes an investigation into the "Case of the Stolen Szechuan Sauce." A security problem was examined to understand if company information had been accessed without permission and,
+        This report provides the results of an investigation into the "Case of the Stolen Szechuan Sauce". A security incident was examined to understand if company information had been accessed without permission and,
         if so, to determine how the attackers operated. The investigation confirmed that a serious security breach did occur. As a result, important company systems were broken into, and the company's secret
         Szechuan sauce recipe was stolen.
       </p>
