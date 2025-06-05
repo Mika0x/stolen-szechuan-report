@@ -4,12 +4,12 @@ function ExecutiveSummary() {
     <div className="executive section-content">
       <h3>↠ Executive Summary ↞</h3>
       <p>
-        This report provides the results of an investigation into the "Case of the Stolen Szechuan Sauce". A security incident was examined to understand if company information had been accessed without permission and,
+        This digital forensics report provides the results of an investigation into the case of the stolen szechuan sauce recipe. A security incident was examined to understand if company information had been accessed without permission and,
         if so, to determine how the attackers operated. The investigation confirmed that a serious security breach did occur. As a result, important company systems were broken into, and the company's secret
         Szechuan sauce recipe was stolen.
       </p>
       <p>
-        The attackers first gained entry into the company's computer systems by repeatedly trying to guess the password for remote access to the main company computer (the server). This server utilized an
+        The attackers first gained entry into the company's computer systems by use of brute force to gain remote access to the main company computer (the server). This server utilized an
         operating system called Windows Server 2012 R2 Standard Evaluation and was set to Pacific Standard Time, a deviation from the company's standard time zone. Another computer implicated in this incident
         was a workstation running Windows 10 Enterprise Evaluation.
       </p>
